@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="owl.carousel offline/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.carousel offline/assets/owl.theme.default.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+</head>
+
+<body>
+  <div style="padding: 0;" class="container-fluid ">
+    <div id="header">
+      <div class="row">
+        <div class="col-lg-12 d-none d-lg-block" id="first-header">
+          <div style="height: 50px;" id="row" class="row d-flex   border">
+            <div style="background-color: rgb(45,48,146)" class="col-2  ">
+              <ul class="row justify-content-around align-items-center">
+                <li class=" col-1 pt-2  " style="list-style: none;"><a href="#"><i
+                      class="fab fa-twitter text-light  wow animate__animated animate__heartBeat animate__delay-3s"></i></a></li>
+                <li class="col-1 pt-2 " style="list-style: none;"><a href="#"></a><i
+                    class="fab fa-facebook-f text-light  wow animate__animated animate__heartBeat animate__delay-3s"></i></li>
+                <li class="col-1 pt-2  " style="list-style: none;"><a href="#"></a><i
+                    class="fab fa-linkedin-in text-light  wow animate__animated animate__heartBea animate__delay-3st"></i></li>
+                <li class="col-1  pt-2 pe-5 " style="list-style: none;"><a href="#"></a><i
+                    class="fab fa-google-plus-g text-light   wow animate__animated animate__heartBeat animate__delay-3s"></i></li>
+              </ul>
+            </div>
+            <div class="col d-flex">
+              <div class="pe-5 wow animate__animated animate__bounceInRight" style="color: #86878a; padding-top: 10px;font-family:sans-serif ;">
+                Abdumajidov_Ismoil</div>
+              <div class=" wow animate__animated animate__bounceInLeft animate__delay-1s" style="color: #86878a; padding-top: 10px; ">+998994776518</div>
+            </div>
+            <div class="col text-end   ">
+              <i style="padding-top: 15px;" class="fas fa-user text-info"></i> <span class="f"
+                style="padding-right: 20px">Login</span>
+              <i class="fa fa-lock text-info" aria-hidden="true"></i> <span class="f"
+                style=" padding-right: 100px">Register</span>
+
+            </div>
+          </div>
+        </div>
+        <!-- menyu -->
+        <div id="menyu" class="container" style="height: 90px; ">
+          <div class="row border-primary ">
+            <div style="background-color: rgb(223, 223, 223);" class="col-sm-12 col-md-12 col-lg-2  ">
+              <img class=" wow animate__animated animate__wobble animate__delay-3s" style="padding: 30px; padding-left: 20px;"
+                src="data:image/webp;base64,UklGRmQDAABXRUJQVlA4TFgDAAAvn8AHEEfFqG0jQf4vjuOPcWeyOgpiwRTvTiOBQIrTGW21bdsw+f/ZzE6R1LZtw8BrCv0G6pTon3xfEAIAIBZCAOHM9VIIhdSBBwDg4IvCDeQhDHtp+BrXja0Gj18Igr3WMnYOFoGB2wJzseW9KQELUgpA2rZtZyM9T91Uazxj27Zt25712Frbtvd/9kUm2eZzRP8ZuG2kKD3GLBy8Afy5l1A5sf8LxPmxO1YWcw+MIveIiKh09STn8W+pmDExElq2BpOI4q6cAYDTl6KI0oZ3Wo2Cz9e35qn/Ipx/2B1Eue/hTTYF9T6+ABf6aHbj2mfD2BtVMXfv1Idyij2MpaqPJ+5OlUYYxs57VDDSkBdMRGFdj4aIaPRBZygRBec3jxUaACNTHVSydf/1r2erbWFEzcmU3EgU3rH+/OeLe5vF1D4yAoEd4pPTs/tlOYVRSFn5tN2dITAKdBIPtpYWR+tSiSh0YDqUiEJn+kKIKL1+/PLK3s0kXXCi2fP/kMUJ/L49FEF8Iofv/uF8srTFjqgAeBDRAjrFjOhVBbchnxZWV1evUuZfAFCN12lCRJtTb7woioZAHb0HgO9UBMfAjlzM7mPArAQqVhRFOQZMAhMHIlr9TaL4T/LojaAC9EdSGjunYEK0cjXhtiLaPAIURESnCicAjx0RbW6VeB1+WR8Df6ob0aoxDkSTj3NQkJG3I3J9zSNF7gROROSUVOBmlcwmnbEgOngHHyIqwucUrVLkTi6BhVsFXpNASk8YX0Us4WTL7mLbxCfYrDBInBhPB9eYkkOY54k19Fr1xqQSJ6fklSNxciFaeV8VWDhDOP7m6Li4uBjNV5iqMqtA6uREUbxyENGjEUy0PkQvZJsFFioO+Q8upA2SFQAADhUPlBt5XKy+VY/vgs0r+C5oi8/E1aliESDpEG4At4nVsSFafOD1P8n6f1e1Q3wh7ruqWkOi6NX/v0RLBLstchhTJnapogKq0e6/TksYZf+SovK/xGNDNCkCRZfNX0tu0IxADoXX1dW09k2vPTsn4ezTlcnepqrquvCAR5CowTcCXvZFCIQCnVuPX336+PbBwUJtCFE4RyhRaN3i0cP3X7++e3IHjCInbsQRpWVlZaUTxS+dAiPKtyRik/ANDCMA"
+                alt="">
+
+            </div>
+            <div class="col" style="padding-right: 0; padding-left: 0;">
+              <nav style="z-index: 3; background-color: white;" class="navbar navbar-expand-lg navbar-light py-lg-0 ">
+                <div class="container">
+                  <a class="navbar-brand wow animate__animated animate__backInUp animate__delay-1s   d-lg-none" href="#">Menyu</a>
+                  <button class="navbar-toggler wow animate__animated animate__backInLeft animate__delay-2s" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-start">
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-4s " aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInLeft animate__delay-5s" href="#">About</a>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss  hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-4s" aria-current="page" href="#">Courses</a>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center   wow animate__animated animate__backInLeft animate__delay-5s" aria-current="page" href="#">Instructors</a>
+                      </li>
+                      <li id="li" class="nav-item dropdown  py-lg-4 px-lg-2 d-block  ">
+                        <a class="nav-link  active dropdown-toggle fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-4s" href="#" id="navbarDropdown"
+                          role="button" aria-expanded="false">
+                          Blog
+                        </a>
+                        <div id="solid"></div>
+                        <ul id="drmenyu" class="dropdown-menu border py-3 px-lg-2 " aria-labelledby="navbarDropdown">
+
+                          <li class="l2 px-1 "><a class="l1 ss" href="#">Blog</a>
+                          </li>
+                          <li class="l2 px-1 "><a class="l1 ss" href="#">Blog Details</a>
+                          </li>
+                          <li class="l2 px-1 "><a class="l1 ss" href="#">Element</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInLeft animate__delay-5s" href="#">Contact</a>
+                      </li>
+                    </ul>
+                    <form class="col-5  d-none d-lg-flex">
+                      <input
+                        style="border-radius:50px; width: 250px; background-color: rgb(223, 223, 223); font-size: 13px;"
+                        class="form-control  me-2 ss wow animate__animated  animate__backInUp animate__delay-4s  " type="search" placeholder="Search Courses" aria-label="Search"
+                        aria-describedby="btn">
+                      <button id="btn" style="background-color: rgb(45,48,146); color: white;" class="btn  wow animate__animated  animate__backInDown animate__delay-5s"
+                        type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- content  -->
+      <div id="header2" class="row">
+        <div class="container d-flex  justify-content-evenly">
+          <div class="row ">
+            <div id="learn" class="col ">
+              <p class="wow animate__animated  animate__fadeInTopRight animate__delay-3s" style="color: rgb(45,48,146); font-size: 18px; font-weight: 600; font-family: 'Josefin Sans', sans-serif;">Popular  online Courses</p><br>
+              <h1 class="wow animate__animated  animate__fadeInTopLeft animate__delay-5s" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700; ">The New Way To</h1>
+              <h1 class="wow animate__animated animate__fadeInTopRight animate__delay-3s" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700;">Learn Properly in</h1>
+              <h1 class="wow animate__animated  animate__fadeInTopLeft animate__delay-5s" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700;">With Us!</h1><br><br>
+              <button
+                style="width: 150px; font-size: 17px; height: 60px; border: 0; color: white; font-weight: 600; background-color: rgb(45,48,146);"
+                class="hvr-bounce-to-right wow animate__animated animate__jello animate__delay-5s">Get Started</button>
+            </div>
+            <div class="col mt-5 d-none d-xl-block">
+              <img class="wow animate__animated  animate__jello animate__delay-5s"
+                src="https://preview.colorlib.com/theme/onlineedu/assets/img/hero/xheroman.png.pagespeed.ic.-tVCH9AISL.webp"
+                alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="container">
+      <div class="row">
+        <div style="padding-right: 0;" id="Lets Brows All Catagori" class="col">
+          <div class="row ">
+            <div style="padding-top: 10%;" class="col-12 text-center justify-content-center">
+              <p class="wow animate__animated  animate__lightSpeedInRight animate__delay-1s" style="color:rgb(65,170,255);  word-spacing: 3px;  font-family: 'Josefin Sans', sans-serif; ">Popular Online Corses</p>
+              <h1 class="wow animate__animated animate__lightSpeedInLeft animate__delay-2s" style="font-size: 50px;  font-weight: 700; font-family: 'Prompt', sans-serif;">Let Brows All Catagori</h1>
+            </div>
+            <div class="row justify-content-evenly ">
+              <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5 wow animate__animated animate__flipInX animate__delay-3s">
+                <div class="card cr p-5 px-3 "><br>
+                  <i class="far fa-image fa-3x i ps-3"></i><br>
+                  <h3 style="font-family: 'Josefin Sans', sans-serif;" class="card-title ps-3">Web Design</h3>
+                  <div class="card-body">
+                    <p class="card-text">Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod
+                      tempor incidi.</p><br>
+                    <a href="#" class="btn btn-outline-primary hvr-buzz ">Read More ></a>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-9 col-sm-9 col-md-6 col-lg-4 mt-5 wow animate__animated animate__flipInY animate__delay-4s">
+                <div class="card cr p-5 px-3"><br>
+                  <i class="fas fa-book-reader fa-3x ps-3 i"></i><br>
+                  <h3 style="font-family: 'Josefin Sans', sans-serif;" class="card-title ps-3">App Development</h3>
+                  <div class="card-body">
+                    <p class="card-text">Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod
+                      tempor incidi.</p><br>
+                    <a href="#" class="btn btn-outline-primary hvr-buzz">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5  wow animate__animated animate__flipInX animate__delay-3s">
+                <div class="card cr p-5 px-3"><br>
+                  <i class="fas fa-cogs fa-3x ps-3 i"></i><br>
+                  <h3 style="font-family: 'Josefin Sans', sans-serif;" class="card-title ps-3">Video Editing</h3>
+                  <div class="card-body">
+                    <p class="card-text">Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod
+                      tempor incidi.</p><br>
+                    <a href="#" class="btn btn-outline-primary hvr-buzz">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5 wow animate__animated animate__flipInX animate__delay-2s">
+                <div class="card cr p-5 px-3"><br>
+                  <i class="fas fa-laptop-code fa-3x ps-3 i"></i><br>
+                  <h3 style="font-family: 'Josefin Sans', sans-serif;" class="card-title ps-3">Digital Marketing</h3>
+                  <div class="card-body">
+                    <p class="card-text">Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod
+                      tempor incidi.</p><br>
+                    <a href="#" class="btn btn-outline-primary hvr-buzz">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5  wow animate__animated animate__flipInY animate__delay-3s">
+                <div class="card cr p-5 px-3"><br>
+                  <i class="fas fa-clipboard-list fa-3x ps-3 i"></i><br>
+                  <h3 style="font-family: 'Josefin Sans', sans-serif;" class="card-title ps-3">Seo Marketing</h3>
+                  <div class="card-body">
+
+                    <p class="card-text">Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod
+                      tempor incidi.</p><br>
+                    <a href="#" class="btn btn-outline-primary hvr-buzz">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5 wow animate__animated animate__flipInX animate__delay-2s">
+                <div class="card cr p-5 px-3"><br>
+                  <i class="far fa-lightbulb fa-3x ps-3 i"></i><br>
+                  <h3 style="font-family: 'Josefin Sans', sans-serif;" class="card-title ps-3">Content Writing</h3>
+                  <div class="card-body">
+                    <p class="card-text">Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod
+                      tempor incidi.</p><br>
+                    <a href="#" class="btn btn-outline-primary hvr-buzz">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 300px;" class="row justify-content-center align-items-center ">
+              <button
+                style="width: 250px; height: 60px; border: 0; font-size: 17px; color: white; font-weight: 600; background-color: rgb(45,48,146);"
+                class="hvr-bounce-to-right wow animate__animated animate__lightSpeedInRight animate__delay-2s"> Find More Courses
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content-2">
+      <div style="height: 200px;padding-top: 20px; background-color: rgb(49,45,151);"
+        class="col-12 text-center justify-content-center wow animate__animated  animate__lightSpeedInRight animate__delay-1s">
+        <p class="wow animate__animated  animate__jackInTheBox animate__delay-2s" style="color:rgb(65,170,255);  word-spacing: 3px; font-family: 'Josefin Sans', sans-serif;">Most Popular Course Of This Week</p>
+        <h1 class="wow animate__animated  animate__rotateIn animate__delay-3s" style="font-size: 50px; color: #fff;  font-weight: 700;">Our Popular Course</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div style="padding-right: 0;" id="Lets Brows All Catagori" class="col">
+            <div class="row ">
+              <div class="row justify-content-evenly ">
+                <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5 wow animate__animated animate__flipInY animate__delay-4s">
+                  <div class="card ">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xpopular_sub1.png.pagespeed.ic.5HRkRcL9IM.webp"
+                      alt="">
+                    <div class="card-body">
+                      <h3 class="card-title ps-3">Graphic Design</h3><br>
+                      <div class="ps-3 d-flex justify-content-between">
+                        <span class="d-flex justify-content-start pt-1">
+                          <i style="color: rgb(251,186,66);" class="fas fa-star  px-1"></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                        </span>
+                        <div style="color:gray;"><p>52 Review</p></div>
+                      </div>
+                      <div class="ps-3 d-flex justify-content-between">
+                        <div><i style="color:white; background-color: gray; border-radius: 10px;" class="fas fa-portrait fa-3x"></i><span style="
+                          position: relative;
+                          bottom: 10px;
+                          color: gray;
+                          ">562</span>
+                         <i style="color: gray; font-size: 25px;
+                         position: relative;
+                         bottom: 6px;
+                         " class="far fa-heart fa-2x"></i><span style="
+                          position: relative;
+                          bottom: 10px;
+                          color: gray;
+                          ">562</span>
+                        </div>
+                        <div>
+                          <p style="color: gray;
+                          position: relative; top: 10px;">Free</p>
+                        </div>
+
+                          
+                      </div>
+                      <!-- <a href="#" class="btn1 btn btn-outline-primary hvr-curl-bottom-right">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5 wow animate__animated  animate__zoomInUp animate__delay-5s">
+                  <div class="card ">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xpopular_sub2.png.pagespeed.ic.lPacsWzJCk.webp"
+                      alt="">
+                    <div class="card-body">
+                      <h3 class="card-title ps-3">Web Development</h3><br>
+                      <div class="ps-3 d-flex justify-content-between">
+                        <span class="d-flex justify-content-start pt-1">
+                          <i style="color: rgb(251,186,66);" class="fas fa-star  px-1"></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                        </span>
+                        <div style="color:gray;"><p>52 Review</p></div>
+                      </div>
+                      <div class="ps-3 d-flex justify-content-between">
+                        <div><i style="color:white; background-color: gray; border-radius: 10px;" class="fas fa-portrait fa-3x"></i><span style="
+                          position: relative;
+                          bottom: 10px;
+                          color: gray;
+                          ">562</span>
+                         <i style="color: gray; font-size: 25px;
+                         position: relative;
+                         bottom: 6px;
+                         " class="far fa-heart fa-2x"></i><span style="
+                          position: relative;
+                          bottom: 10px;
+                          color: gray;
+                          ">562</span>
+                        </div>
+                        <div>
+                          <p style="color: gray;
+                          position: relative; top: 10px;">Free</p>
+                        </div>
+
+                          
+                      </div>
+                   
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-6 col-lg-4 mt-5  wow animate__animated animate__flipInY animate__delay-4s">
+                  <div class="card">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xpopular_sub2.png.pagespeed.ic.lPacsWzJCk.webp"
+                      alt="">
+                    <div class="card-body">
+                      <h3  class="card-title ps-3">Digital Marketing</h3><br>
+                      <div class="ps-3 d-flex justify-content-between">
+                        <span class="d-flex justify-content-start pt-1">
+                          <i style="color: rgb(251,186,66);" class="fas fa-star  px-1"></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                          <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                        </span>
+                        <div style="color:gray;"><p>52 Review</p></div>
+                      </div>
+                      <div class="ps-3 d-flex justify-content-between">
+                        <div><i style="color:white; background-color: gray; border-radius: 10px;" class="fas fa-portrait fa-3x"></i><span style="
+                          position: relative;
+                          bottom: 10px;
+                          color: gray;
+                          ">562</span>
+                         <i style="color: gray; font-size: 25px;
+                         position: relative;
+                         bottom: 6px;
+                         " class="far fa-heart fa-2x"></i><span style="
+                          position: relative;
+                          bottom: 10px;
+                          color: gray;
+                          ">562</span>
+                        </div>
+                        <div>
+                          <p style="color: gray;
+                          position: relative; top: 10px;">Free</p>
+                        </div>
+
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 300px;" class="row justify-content-center align-items-center ">
+                <button
+                  style="width: 250px; height: 60px; border: 0; font-size: 17px; color: white; font-weight: 600; background-color: rgb(45,48,146);"
+                  class="hvr-bounce-to-right  wow animate__animated animate__flipInY animate__delay-5s"> Find More Courses
+                </button>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: rgb(49,45,151);" id="content-3">
+      <div style="height: 200px;padding-top: 20px; " class="col-12 text-center justify-content-center">
+        <p class="wow animate__animated animate__zoomIn animate__delay-1s" style="color:rgb(65,170,255);  word-spacing: 3px; font-family: 'Josefin Sans', sans-serif; ">More About Our Faculty</p>
+        <h1 class="wow animate__animated animate__zoomInUp animate__delay-1s" style="font-size: 50px;  font-weight: 700; color: white;">Our Best Teachers</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div style="padding-right: 0;" id="Lets Brows All Catagori" class="col">
+            <div class="row ">
+              <div class="row justify-content-evenly ">
+                <div class="col-9 col-sm-9 col-md-5 col-lg-3 mt-5  wow animate__animated animate__flipInY animate__delay-2s">
+                  <div class="card text-center ">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xteam1.png.pagespeed.ic.XP8FuCEpbp.webp"
+                      alt="">
+                    <div class="card-body">
+                      <h4 class="card-title ps-3">Alexa Janathon</h4>
+                      <p>Faculty</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-5 col-lg-3 mt-5  wow animate__animated animate__flipInY animate__delay-2s">
+                  <div class="card text-center">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xteam2.png.pagespeed.ic.DkAYUTIFKv.webp"
+                      alt="">
+                    <div class="card-body">
+                      <h4 class="card-title ps-3">Janathon Smith</h4>
+                      <p>Faculty</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-5 col-lg-3 mt-5  wow animate__animated animate__flipInY animate__delay-2s">
+                  <div class="card text-center">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xteam3.png.pagespeed.ic.ZjKltUw-pd.webp"
+                      alt="">
+                    <div class="card-body">
+                      <h4 class="card-title ps-3">Alexa MacCalum</h4>
+                      <p>Faculty</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-5 col-lg-3 mt-5  wow animate__animated animate__flipInY animate__delay-2s">
+                  <div class="card text-center">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xteam4.png.pagespeed.ic.klxTBb6pMG.webp"
+                      alt="">
+                    <div class="card-body">
+                      <h4 class="card-title ps-3">Alexa j Watson</h4>
+                      <p>Faculty</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 300px;" class="row justify-content-center align-items-center ">
+                <button id="veiw" class="hvr-bounce-to-right hvr-bounce-to-right:beforey  wow animate__animated animate__rollIn animate__delay-2s"> View All Faculty
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 200px;" id="content-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-lg-6">
+            <h6 style="color: rgb(59,160,255); font-family: 'Josefin Sans', sans-serif;">More About Our Company</h6><br>
+            <h1 style="font-size: 50px; color: rgb(3,4,49);  font-weight: 700;">Want to know more</h1><br>
+            <p style="color: gray;">There arge many variations ohf passages of sorem gpsum ilable, but the majority have
+              suffered alteration
+              in some form, by ected humour, or randomised words whi.</p><br>
+            <i style="color: rgb(49,45,151);" class="far fa-lightbulb fa-1x i"></i><span> Creative ideas base</span><br>
+            <i style="color: rgb(49,45,151);" class="fas fa-user-shield fa-1x"></i><span>Assages of sorem gpsum
+              ilable</span><br>
+            <i style="color: rgb(49,45,151);" class="fas fa-graduation-cap fa-1x"></i><span>Have suffered alteration in
+              so</span><br>
+            <i style="color: rgb(49,45,151);" class="fas fa-clipboard-list fa-1x i"></i><span> Randomised words
+              whi</span><br><br><br><br>
+            <button
+              style="width: 250px; height: 60px; border: 0; font-size: 17px; color: white; font-weight: 600; background-color: rgb(45,48,146);"
+              class="hvr-bounce-to-right"> Find More Courses
+            </button>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="row d-flex">
+              <div class="col-lg-8 ">
+                <img
+                  src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xabout2.png.pagespeed.ic.6xSE4VgknV.webp"
+                  alt="">
+              </div>
+              <div class="col-lg-4 ">
+                <img
+                  src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xabout1.png.pagespeed.ic.OSu4ZWGT0Q.webp"
+                  alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5  wow animate__animated animate__flipInY animate__delay-2s " style="background-color: rgb(49,45,151);" id="content-5">
+      <div id="cont" class="container">
+        <div class="carousel owl-carousel  ">
+          <div class="card card-1 text-center px-5 ">
+            <div id="ripp" style="width: 100px; height: 100px; padding: 0px; border-radius: 60%; margin-left: 45%;"
+              class=" hvr-rippl-out mt-4 ">
+              <div style="width: 100px; height: 100px; padding: 0px; border-radius: 60%;" class=" border ">
+                <img style="width: 100px; height: 100px; border-radius: 60%; padding:10px; 
+                      position: relative;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%,-50%);
+                  "
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQngUy-98D06PjcSPaF-YUnogXYTxBFJsnw&usqp=CAU"
+                  alt="">
+              </div>
+            </div>
+            <h6 class="my-5" style="color: white; font-size: 25px; font-weight: 500;">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Itaque vero mollitia amet ducimus quia provident autem neque ipsam, sapiente
+              repellat?</h6>
+            <span class="d-flex justify-content-center ">
+              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+            </span>
+
+
+          </div>
+          <div class="card card-2 text-center col  px-5  ">
+            <div id="ripp" style="width: 100px; height: 100px; padding: 0px; border-radius: 60%; margin-left: 45%;"
+              class=" hvr-rippl-out mt-4 ">
+              <div style="width: 100px; height: 100px; padding: 0px; border-radius: 60%;" class=" border ">
+                <img style="width: 100px; height: 100px; border-radius: 60%; padding:10px; 
+                      position: relative;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%,-50%);
+                  "
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQngUy-98D06PjcSPaF-YUnogXYTxBFJsnw&usqp=CAU"
+                  alt="">
+              </div>
+            </div>
+            <h6 class="my-5" style="color: white; font-size: 25px; font-weight: 500;">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Itaque vero mollitia amet ducimus quia provident autem neque ipsam, sapiente
+              repellat?</h6>
+            <span class="d-flex justify-content-center ">
+              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 40px;" id="content-6">
+      <div class="container">
+        <div class="row">
+           <div class="col-12 text-center">
+            <p class=" wow animate__animated animate__jackInTheBox animate__delay-1s" style="color:rgb(65,170,255);  word-spacing: 3px; font-family: 'Josefin Sans', sans-serif; ">Our Latest News From Our Blog</p>
+            <h1  class=" wow animate__animated animate__zoomOutLeft animate__delay-2s" style="font-size: 50px;  font-weight: 700;">Latest News From Blog</h1>
+           </div>
+          <div style="padding-right: 0;" id="Lets Brows All Catagori" class="col">
+            <div class="row ">
+              <div class="row justify-content-evenly ">
+                <div class="col-10 col-sm-12 col-md-6 col-lg-5 mt-5 ms-lg-5 wow animate__animated animate__zoomOutDown animate__delay-3s">
+                  <div class="card ">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xpopular_sub1.png.pagespeed.ic.5HRkRcL9IM.webp"
+                      alt="">
+                    <div class="content-5_24">
+                      <h3>24</h3>
+                      <h5>Now</h5>
+                    </div>
+                    <div class="card-body ">
+                      <p class="ps-3">| Properties</p>
+                      <h3 class="card-title ps-3">Footprints in Time is perfect House in Kurashiki</h3>
+                      <p class="ps-3">READ MORE »</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-10 col-sm-12 col-md-6 col-lg-5 mt-5 me-lg-5 wow animate__animated animate__zoomOutDown animate__delay-3s">
+                  <div class="card ">
+                    <img
+                      src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xpopular_sub2.png.pagespeed.ic.lPacsWzJCk.webp"
+                      alt="">
+                      
+                    <div class="content-5_24">
+                      <h3>24</h3>
+                      <h5>Now</h5>
+                    </div>
+                    <div class="card-body">
+                      <p class="ps-3">| Properties</p>
+                      <h3 class="card-title ps-3">Footprints in Time is perfect House in Kurashiki</h3>
+                      <p class="ps-3">READ MORE »</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" style="background-color: rgb(11,11,29); margin-top: 100px;">
+      <div style=" padding-top: 100px;" class="container">
+        <div class="row">
+          <div class="col-12  text-center">
+            <h4 style="color: white; margin-bottom: 45px; font-size:30px ;">Let’s Get Social</h4>
+            <div class="icon-1 ol-12 justify-content-evenly d-flex text-light">
+              <div class="icon1 effect mx-2 hvr-wobble-to-bottom-right"><i class="fab fa-facebook-f fs-4 hvr-buzz"></i></div>
+              <div class="icon2 effect mx-2 hvr-wobble-to-bottom-right"><i class="fab fa-twitter fs-4 hvr-buzz"></i></div>
+              <div class="icon3 effect mx-2 hvr-wobble-to-bottom-right"><i  class="fab fa-google fs-4 hvr-buzz"></i></div>
+              <div class="icon4 effect mx-2 hvr-wobble-to-bottom-right"><i  class="fab fa-instagram fs-4 hvr-buzz"></i></div>
+              <div class="icon5 effect mx-2 hvr-wobble-to-bottom-right"><i style="color: red;" class="fab fa-youtube hvr-buzz fs-4"></i></div>
+            </div>
+          </div>
+
+
+          <div style="margin-top: 130px; color: gray;" class="col-12 ">
+            <div class="row g-5 footer_roow justify-content-center px-5 ">
+              <div class="col-sm-9 col-md-5 col-lg-3 ps-5  ">
+                <h4 class="text-light">About Us</h4>
+                <p class="hvr">Online Learning</p>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Press Center</p>
+                <p>Become An Instructor</p>
+
+              </div>
+              <div class="col-sm-9 col-md-5 col-lg-3 ps-5 ">
+                <h4 class="text-light">Campus</h4>
+                <p>Our Plans</p>
+                <p>Free Trial</p>
+                <p>Academic Solutions</p>
+                <p>Business Solutions</p>
+                <p>Government Solutions</p>
+              </div>
+              <div class="col-sm-9 col-md-5 col-lg-3   ps-5">
+                <h4 class="text-light">Study</h4>
+                <p>Admissions Policy</p>
+                <p>Getting Started</p>
+                <p>Online Application</p>
+                <p>Visa Information</p>
+                <p>Tuition Calculator</p>
+              </div>
+              <div class="col-sm-9 col-md-5 col-lg-3  ps-5">
+                <h4 class="text-light">Spport</h4>
+                <p>Support</p>
+                <p>Contact Us</p>
+                <p>System Requirements</p>
+                <p>Register Activation Key</p>
+                <p>Site Feedback</p>
+              </div>
+            </div>
+          </div>
+          <div style="border-top: 0.4px solid; color: gray;" class="col-12  text-center py-5 mt-5">
+            <h5>Web Developer Abdumajidov Ismoil |<span id="footer_nik"> <i class="fab fa-telegram text-success"></i>
+                <span class="hvr-underline-from-center pb-2">WEB_DEVELOPER_0075</span></span></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="jQuery.js/jQuery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="owl.carousel offline/owl.carousel.min.js"></script>
+  <script src="main.js"></script>
+  <script src="WOW-master/WOW-master/dist/wow.js"></script>
+  <script>
+    new WOW().init();
+</script>         
+
+</body>
+
+</html>
