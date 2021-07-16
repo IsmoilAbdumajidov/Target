@@ -31,10 +31,10 @@
 
 <body>
   <div style="padding: 0;" class="container-fluid ">
-    <div id="header">
+    <div class="container-fluid" id="header">
       <div class="row">
-        <div class="col-lg-12 d-none d-lg-block" id="first-header">
-          <div style="height: 50px;" id="row" class="row d-flex   border">
+        <div class="col-lg-12 d-none d-lg-block border-bottom" id="first-header">
+          <div style="height: 50px;" id="row" class="row d-flex   ">
             <div style="background-color: rgb(45,48,146)" class="col-2  ">
               <ul class="row justify-content-around align-items-center">
                 <li class=" col-1 pt-2  " style="list-style: none;"><a href="#"><i
@@ -61,11 +61,13 @@
             </div>
           </div>
         </div>
-        <!-- menyu -->
+        </div>
+        
+      <div class="row">
         <div id="menyu" class="container" style="height: 90px; ">
           <div class="row border-primary ">
-            <div style="background-color: rgb(223, 223, 223);" class="col-sm-12 col-md-12 col-lg-2  ">
-              <img class=" wow animate__animated animate__wobble animate__delay-3s" style="padding: 30px; padding-left: 20px;"
+            <div id="header_col" style="background-color: rgb(223, 223, 223);" class="col-sm-12 col-md-12 col-lg-2  ">
+              <img id="header_img" class=" wow animate__animated animate__wobble animate__delay-3s" style="padding: 30px; padding-left: 20px;"
                 src="data:image/webp;base64,UklGRmQDAABXRUJQVlA4TFgDAAAvn8AHEEfFqG0jQf4vjuOPcWeyOgpiwRTvTiOBQIrTGW21bdsw+f/ZzE6R1LZtw8BrCv0G6pTon3xfEAIAIBZCAOHM9VIIhdSBBwDg4IvCDeQhDHtp+BrXja0Gj18Igr3WMnYOFoGB2wJzseW9KQELUgpA2rZtZyM9T91Uazxj27Zt25712Frbtvd/9kUm2eZzRP8ZuG2kKD3GLBy8Afy5l1A5sf8LxPmxO1YWcw+MIveIiKh09STn8W+pmDExElq2BpOI4q6cAYDTl6KI0oZ3Wo2Cz9e35qn/Ipx/2B1Eue/hTTYF9T6+ABf6aHbj2mfD2BtVMXfv1Idyij2MpaqPJ+5OlUYYxs57VDDSkBdMRGFdj4aIaPRBZygRBec3jxUaACNTHVSydf/1r2erbWFEzcmU3EgU3rH+/OeLe5vF1D4yAoEd4pPTs/tlOYVRSFn5tN2dITAKdBIPtpYWR+tSiSh0YDqUiEJn+kKIKL1+/PLK3s0kXXCi2fP/kMUJ/L49FEF8Iofv/uF8srTFjqgAeBDRAjrFjOhVBbchnxZWV1evUuZfAFCN12lCRJtTb7woioZAHb0HgO9UBMfAjlzM7mPArAQqVhRFOQZMAhMHIlr9TaL4T/LojaAC9EdSGjunYEK0cjXhtiLaPAIURESnCicAjx0RbW6VeB1+WR8Df6ob0aoxDkSTj3NQkJG3I3J9zSNF7gROROSUVOBmlcwmnbEgOngHHyIqwucUrVLkTi6BhVsFXpNASk8YX0Us4WTL7mLbxCfYrDBInBhPB9eYkkOY54k19Fr1xqQSJ6fklSNxciFaeV8VWDhDOP7m6Li4uBjNV5iqMqtA6uREUbxyENGjEUy0PkQvZJsFFioO+Q8upA2SFQAADhUPlBt5XKy+VY/vgs0r+C5oi8/E1aliESDpEG4At4nVsSFafOD1P8n6f1e1Q3wh7ruqWkOi6NX/v0RLBLstchhTJnapogKq0e6/TksYZf+SovK/xGNDNCkCRZfNX0tu0IxADoXX1dW09k2vPTsn4ezTlcnepqrquvCAR5CowTcCXvZFCIQCnVuPX336+PbBwUJtCFE4RyhRaN3i0cP3X7++e3IHjCInbsQRpWVlZaUTxS+dAiPKtyRik/ANDCMA"
                 alt="">
 
@@ -74,7 +76,7 @@
               <nav style="z-index: 3; background-color: white;" class="navbar navbar-expand-lg navbar-light py-lg-0 ">
                 <div class="container">
                   <a class="navbar-brand wow animate__animated animate__backInUp animate__delay-1s   d-lg-none" href="#">Menyu</a>
-                  <button class="navbar-toggler wow animate__animated animate__backInLeft animate__delay-2s" type="button" data-bs-toggle="collapse"
+                  <button class="navbar-toggler border-0 wow animate__animated animate__backInLeft animate__delay-2s" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -82,19 +84,19 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-start">
                       <li class="nav-item py-lg-4 px-lg-2 ">
-                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-4s " aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-2s " aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item py-lg-4 px-lg-2 ">
-                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInLeft animate__delay-5s" href="#">About</a>
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInLeft animate__delay-1s" href="#">About</a>
                       </li>
                       <li class="nav-item py-lg-4 px-lg-2 ">
-                        <a class="nav-link active fw-bolder ss  hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-4s" aria-current="page" href="#">Courses</a>
+                        <a class="nav-link active fw-bolder ss  hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-2s" aria-current="page" href="#">Courses</a>
                       </li>
                       <li class="nav-item py-lg-4 px-lg-2 ">
-                        <a class="nav-link active fw-bolder ss hvr-underline-from-center   wow animate__animated animate__backInLeft animate__delay-5s" aria-current="page" href="#">Instructors</a>
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center   wow animate__animated animate__backInLeft animate__delay-1s" aria-current="page" href="#">Instructors</a>
                       </li>
                       <li id="li" class="nav-item dropdown  py-lg-4 px-lg-2 d-block  ">
-                        <a class="nav-link  active dropdown-toggle fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-4s" href="#" id="navbarDropdown"
+                        <a class="nav-link  active dropdown-toggle fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInRight animate__delay-2s" href="#" id="navbarDropdown"
                           role="button" aria-expanded="false">
                           Blog
                         </a>
@@ -110,7 +112,7 @@
                         </ul>
                       </li>
                       <li class="nav-item py-lg-4 px-lg-2 ">
-                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInLeft animate__delay-5s" href="#">Contact</a>
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  wow animate__animated animate__backInLeft animate__delay-1s" href="#">Contact</a>
                       </li>
                     </ul>
                     <form class="col-5  d-none d-lg-flex">
@@ -118,7 +120,7 @@
                         style="border-radius:50px; width: 250px; background-color: rgb(223, 223, 223); font-size: 13px;"
                         class="form-control  me-2 ss wow animate__animated  animate__backInUp animate__delay-4s  " type="search" placeholder="Search Courses" aria-label="Search"
                         aria-describedby="btn">
-                      <button id="btn" style="background-color: rgb(45,48,146); color: white;" class="btn  wow animate__animated  animate__backInDown animate__delay-5s"
+                      <button id="btn" style="background-color: rgb(45,48,146); color: white;" class="btn  wow animate__animated  animate__backInDown animate__delay-4s"
                         type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </form>
                   </div>
@@ -129,15 +131,16 @@
           </div>
         </div>
       </div>
-      <!-- content  -->
+     
+      
       <div id="header2" class="row">
         <div class="container d-flex  justify-content-evenly">
           <div class="row ">
             <div id="learn" class="col ">
-              <p class="wow animate__animated  animate__fadeInTopRight animate__delay-3s" style="color: rgb(45,48,146); font-size: 18px; font-weight: 600; font-family: 'Josefin Sans', sans-serif;">Popular  online Courses</p><br>
-              <h1 class="wow animate__animated  animate__fadeInTopLeft animate__delay-5s" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700; ">The New Way To</h1>
-              <h1 class="wow animate__animated animate__fadeInTopRight animate__delay-3s" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700;">Learn Properly in</h1>
-              <h1 class="wow animate__animated  animate__fadeInTopLeft animate__delay-5s" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700;">With Us!</h1><br><br>
+              <p  class="wow animate__animated  animate__fadeInTopRight animate__delay-3s content_sml" >Popular  online Courses</p><br>
+              <h1 class="wow animate__animated  animate__fadeInTopLeft animate__delay-5s content_h1" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700; ">The New Way To</h1>
+              <h1 class="wow animate__animated animate__fadeInTopRight animate__delay-3s content_h1" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700;">Learn Properly in</h1>
+              <h1 class="wow animate__animated  animate__fadeInTopLeft animate__delay-5s content_h1" style="color: rgb(3,4,49); font-size: 60px; font-weight: 700;">With Us!</h1><br><br>
               <button
                 style="width: 150px; font-size: 17px; height: 60px; border: 0; color: white; font-weight: 600; background-color: rgb(45,48,146);"
                 class="hvr-bounce-to-right wow animate__animated animate__jello animate__delay-5s">Get Started</button>
@@ -288,7 +291,7 @@
 
                           
                       </div>
-                      <!-- <a href="#" class="btn1 btn btn-outline-primary hvr-curl-bottom-right">Go somewhere</a> -->
+                  
                     </div>
                   </div>
                 </div>
@@ -487,71 +490,51 @@
                   alt="">
               </div>
               <div class="col-lg-4 ">
-                <img
-                  src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xabout1.png.pagespeed.ic.OSu4ZWGT0Q.webp"
-                  alt="">
+              
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="mt-5  wow animate__animated animate__flipInY  " style="background-color: rgb(49,45,151);" id="content-5">
+    <div class="mt-5  wow animate__animated animate__flipInY   " style="background-color: rgb(49,45,151);" id="content-5">
       <div id="cont" class="container">
-        <div class="carousel owl-carousel  ">
-          <div class="card card-1 text-center px-5 ">
-            <div id="ripp" style="width: 100px; height: 100px; padding: 0px; border-radius: 60%; margin-left: 45%;"
-              class=" hvr-rippl-out mt-4 ">
-              <div style="width: 100px; height: 100px; padding: 0px; border-radius: 60%;" class=" border ">
-                <img style="width: 100px; height: 100px; border-radius: 60%; padding:10px; 
-                      position: relative;
-                      top: 50%;
-                      left: 50%;
-                      transform: translate(-50%,-50%);
-                  "
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQngUy-98D06PjcSPaF-YUnogXYTxBFJsnw&usqp=CAU"
-                  alt="">
+        
+          ,<div class="row">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+              <div class=" card-1 text-center px-lg-5 px-md-5 px-0 px-sm-0   ">
+                <div id="ripp" style="width: 100px;  ; border-radius: 60%; margin-bottom: 30px;"
+                  class=" hvr-rippl-out mt-4 ">
+                  <div style="width: 100px; height: 100px; padding: 0px; border-radius: 60%;" class=" border ">
+                    <img style="width: 100px; height: 100px; border-radius: 60%; padding:10px; 
+                          position: relative;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%,-50%);
+                      "
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQngUy-98D06PjcSPaF-YUnogXYTxBFJsnw&usqp=CAU"
+                      alt="">
+                  </div>
+                </div>
+               <div class="p-0">
+                <h6  style="color: white; font-size: 25px; font-weight: 500;">Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Itaque vero mollitia amet ducimus quia provident autem neque ipsam, sapiente
+                  repellat?</h6>
+               </div>
+                <span class="d-flex justify-content-center ">
+                  <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                  <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                  <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                  <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
+                  <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
+                </span><br>
+                <button id="veiw" class="hvr-bounce-to-right hvr-bounce-to-right:beforey  wow animate__animated animate__rollIn "> View All Faculty
+                </button>
+    
               </div>
             </div>
-            <h6 class="my-5" style="color: white; font-size: 25px; font-weight: 500;">Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Itaque vero mollitia amet ducimus quia provident autem neque ipsam, sapiente
-              repellat?</h6>
-            <span class="d-flex justify-content-center ">
-              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
-            </span>
-
-
           </div>
-          <div class="card card-2 text-center col  px-5  ">
-            <div id="ripp" style="width: 100px; height: 100px; padding: 0px; border-radius: 60%; margin-left: 45%;"
-              class=" hvr-rippl-out mt-4 ">
-              <div style="width: 100px; height: 100px; padding: 0px; border-radius: 60%;" class=" border ">
-                <img style="width: 100px; height: 100px; border-radius: 60%; padding:10px; 
-                      position: relative;
-                      top: 50%;
-                      left: 50%;
-                      transform: translate(-50%,-50%);
-                  "
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQngUy-98D06PjcSPaF-YUnogXYTxBFJsnw&usqp=CAU"
-                  alt="">
-              </div>
-            </div>
-            <h6 class="my-5" style="color: white; font-size: 25px; font-weight: 500;">Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Itaque vero mollitia amet ducimus quia provident autem neque ipsam, sapiente
-              repellat?</h6>
-            <span class="d-flex justify-content-center ">
-              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star "></i>
-              <i style="color: rgb(251,186,66);" class="fas fa-star px-1"></i>
-            </span>
-          </div>
-        </div>
+       
       </div>
     </div>
     <div style="margin-top: 40px;" id="content-6">
@@ -564,7 +547,7 @@
           <div style="padding-right: 0;" id="Lets Brows All Catagori" class="col">
             <div class="row ">
               <div class="row justify-content-evenly ">
-                <div class="col-10 col-sm-12 col-md-6 col-lg-5 mt-5 ms-lg-5 wow animate__animated animate__zoomOutDown ">
+                <div class="col-10 col-sm-12 col-md-6 col-lg-5 mt-5 ms-lg-5 wow animate__animated animate__backInRight ">
                   <div class="card ">
                     <img
                       src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xpopular_sub1.png.pagespeed.ic.5HRkRcL9IM.webp"
@@ -580,7 +563,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-10 col-sm-12 col-md-6 col-lg-5 mt-5 me-lg-5 wow animate__animated animate__zoomOutDown ">
+                <div class="col-10 col-sm-12 col-md-6 col-lg-5 mt-5 me-lg-5 wow animate__animated animate__backInLeft ">
                   <div class="card ">
                     <img
                       src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xpopular_sub2.png.pagespeed.ic.lPacsWzJCk.webp"
