@@ -1,13 +1,24 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
-body{
+/* body{
     overflow-x: hidden;
-}
+} */
 .f{
     color:  #86878a;
 }
 .f:hover{
     color:rgb(0, 51, 153);
+}
+.content_h1{
+    color: rgb(3,4,49); 
+    font-size: 60px; 
+    font-weight: 700;
+}
+.content_sml{
+    color: rgb(45,48,146); 
+    font-size: 18px; 
+    font-weight: 600; 
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #btn{
@@ -148,47 +159,43 @@ body{
 }
 #cont{
     background-color: rgb(49,45,151);
-    width: 900px;
+   
    
    
     margin: 0 auto;
 }
-.carousel{
- 
-  max-width: 100%;
-  padding: 20px;
 
-
-}
-.carousel .card{
+ .card h6{
     border-radius: 0;
     border: 0;
     line-height: 200px;
-    height: 400px;
+    height: 100px;
     text-align: center;
     font-weight: bold;
     
-    margin: 20px 0;
+    
+    /* margin: 20px 0; */
  
 
 }
 
 .card-1{
     background-color:rgb(49,45,151) !important;
-    height: 600px;
+    height: 60%;
+    padding-bottom: 30px;
 }
 .card-2{
     background-color:rgb(49,45,151) !important;
 }
 .owl-next{
     position: absolute;
-    right: -20px;
+    right: -0px;
     top: 30%;
     color: white !important;
 }
 .owl-prev{
     position: absolute;
-    left: -20px;
+    left: -18px;
     top: 30%;
     color: white !important;
 }
@@ -319,4 +326,41 @@ body{
 .footer_roow p:hover{
     padding-left: 7px;
     color: white;
+}
+@media (max-width:700px) {
+   
+    .content_h1{
+        font-size: 50px !important;
+    }
+    
+    #content-5 h6{
+        font-size: 15px !important; 
+        /* margin-left: 30px; */
+    } 
+   
+
+    
+}
+
+@media (max-width:580px) {
+    #content-5{
+        margin: 20px;
+    }
+    #content-5 h6{
+        font-size: 10px !important; 
+        /* margin-left: 30px; */
+    } 
+    .card-1{
+        margin: 10px;
+        width: 100% !important;
+        margin-left:40px ;
+
+        
+
+    }
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+    }
+   
 }
