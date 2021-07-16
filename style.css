@@ -355,8 +355,9 @@
     #content-4{
         margin-left: 30px !important;
     }
-   
-}
-.row{
+    .row{
     --bs-gutter-x:0 !important;
 }
+   
+}
+
