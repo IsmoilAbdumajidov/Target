@@ -1,8 +1,8 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+*{margin: 0; padding: 0; box-sizing: border-box; }
 
-body{
+/* body{
     overflow-x: hidden;
-}
+} */
 .f{
     color:  #86878a;
 }
@@ -42,7 +42,7 @@ body{
 #drmenyu{
     border-radius: 0;
    display: none;
-   /* display: block; */
+   
     margin: 0;
     padding: 0;
     position: absolute;
@@ -181,34 +181,12 @@ body{
 
 .card-1{
     background-color:rgb(49,45,151) !important;
-    height: 60%;
+    height: 94%;
     padding-bottom: 30px;
+   
 }
-.card-2{
-    background-color:rgb(49,45,151) !important;
-}
-.owl-next{
-    position: absolute;
-    right: -0px;
-    top: 30%;
-    color: white !important;
-}
-.owl-prev{
-    position: absolute;
-    left: -18px;
-    top: 30%;
-    color: white !important;
-}
-.owl-prev:hover{
-    background-color: rgb(49,45,151) !important;
-}
-.owl-next:hover{
-    background-color: rgb(49,45,151) !important;
-}
-.owl-prev span, .owl-next span{
-    font-size: 50px;
-    /* background-color: #000; */
-}
+
+
 
   @-webkit-keyframes hvr-rippl-out {
     100% {
@@ -330,13 +308,17 @@ body{
 @media (max-width:700px) {
    
     .content_h1{
-        font-size: 50px !important;
+        font-size: 40px !important;
+
     }
     
     #content-5 h6{
         font-size: 15px !important; 
         /* margin-left: 30px; */
     } 
+    .h1{
+        font-size: 40px !important;
+    }
    
 
     
@@ -362,5 +344,19 @@ body{
         margin: 0;
         padding: 0;
     }
+    .content_h1{
+        font-size: 36px !important;
+
+    }
+
+    .h1{
+        font-size: 36px !important;
+    }
+    #content-4{
+        margin-left: 30px !important;
+    }
    
+}
+.row{
+    --bs-gutter-x:0 !important;
 }
