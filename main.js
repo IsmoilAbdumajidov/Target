@@ -40,4 +40,25 @@ $(document).ready(function(){
             }
         }
     });
+    let scrol = $(".scrolTop");
+    $(".scrolTop").hide();
+    $(window).scroll(function(){
+        
+        let scroltop=$("html").scrollTop();
+        console.log(scroltop);
+        
+        if (scroltop>=200) {
+            scrol.show()
+        }
+        else{
+            scrol.hide()
+        }
+        
+    });
+    $(".scrolTop").click(function(){
+        $("html").animate({
+          scrollTop:"0" 
+            
+        },1000)
+    })
 })
