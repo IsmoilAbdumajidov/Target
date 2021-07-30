@@ -21,18 +21,97 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="owl.carousel offline/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owl.carousel offline/assets/owl.theme.default.min.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 
 
 
 </head>
 
 <body>
+  <div id="navbar" class="row" style="padding: 0; --bs-gutter-x:0;">
+        <div id="menyu" class="container" style="height: 90px; ">
+          <div class="row  ">
+            <div id="header_col" style="background-color: rgb(223, 223, 223);" class="col-sm-12 col-md-12 col-lg-2  ">
+              <img id="header_img"
+                style="padding: 30px; padding-left: 20px;"
+                src="data:image/webp;base64,UklGRmQDAABXRUJQVlA4TFgDAAAvn8AHEEfFqG0jQf4vjuOPcWeyOgpiwRTvTiOBQIrTGW21bdsw+f/ZzE6R1LZtw8BrCv0G6pTon3xfEAIAIBZCAOHM9VIIhdSBBwDg4IvCDeQhDHtp+BrXja0Gj18Igr3WMnYOFoGB2wJzseW9KQELUgpA2rZtZyM9T91Uazxj27Zt25712Frbtvd/9kUm2eZzRP8ZuG2kKD3GLBy8Afy5l1A5sf8LxPmxO1YWcw+MIveIiKh09STn8W+pmDExElq2BpOI4q6cAYDTl6KI0oZ3Wo2Cz9e35qn/Ipx/2B1Eue/hTTYF9T6+ABf6aHbj2mfD2BtVMXfv1Idyij2MpaqPJ+5OlUYYxs57VDDSkBdMRGFdj4aIaPRBZygRBec3jxUaACNTHVSydf/1r2erbWFEzcmU3EgU3rH+/OeLe5vF1D4yAoEd4pPTs/tlOYVRSFn5tN2dITAKdBIPtpYWR+tSiSh0YDqUiEJn+kKIKL1+/PLK3s0kXXCi2fP/kMUJ/L49FEF8Iofv/uF8srTFjqgAeBDRAjrFjOhVBbchnxZWV1evUuZfAFCN12lCRJtTb7woioZAHb0HgO9UBMfAjlzM7mPArAQqVhRFOQZMAhMHIlr9TaL4T/LojaAC9EdSGjunYEK0cjXhtiLaPAIURESnCicAjx0RbW6VeB1+WR8Df6ob0aoxDkSTj3NQkJG3I3J9zSNF7gROROSUVOBmlcwmnbEgOngHHyIqwucUrVLkTi6BhVsFXpNASk8YX0Us4WTL7mLbxCfYrDBInBhPB9eYkkOY54k19Fr1xqQSJ6fklSNxciFaeV8VWDhDOP7m6Li4uBjNV5iqMqtA6uREUbxyENGjEUy0PkQvZJsFFioO+Q8upA2SFQAADhUPlBt5XKy+VY/vgs0r+C5oi8/E1aliESDpEG4At4nVsSFafOD1P8n6f1e1Q3wh7ruqWkOi6NX/v0RLBLstchhTJnapogKq0e6/TksYZf+SovK/xGNDNCkCRZfNX0tu0IxADoXX1dW09k2vPTsn4ezTlcnepqrquvCAR5CowTcCXvZFCIQCnVuPX336+PbBwUJtCFE4RyhRaN3i0cP3X7++e3IHjCInbsQRpWVlZaUTxS+dAiPKtyRik/ANDCMA"
+                alt="">
+
+            </div>
+            <div class="col" style="padding-right: 0; padding-left: 0;">
+              <nav style="z-index: 3; background-color: white;" class="navbar navbar-expand-lg navbar-light py-lg-0 ">
+                <div class="container">
+                  <a class="navbar-brand   d-lg-none"
+                    href="#">Menyu</a>
+
+                  <div
+                    class="menu-btn navbar-toggler border-0 "
+                    type="button" data-bs-toggle="collapse" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSup" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu-btn-burger"></div>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarSup">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-start">
+                      <li class="nav-item py-lg-4 px-lg-2  ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center   "
+                          aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center "
+                          href="#">About</a>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss  hvr-underline-from-center "
+                          aria-current="page" href="#">Courses</a>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  "
+                          aria-current="page" href="#">Instructors</a>
+                      </li>
+                      <li id="li" class="nav-item dropdown  py-lg-4 px-lg-2 d-block  ">
+                        <a class="nav-link  active dropdown-toggle fw-bolder ss hvr-underline-from-center  "
+                          href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                          Blog
+                        </a>
+                        <div id="solid"></div>
+                        <ul id="drmenyu" class="dropdown-menu border py-3 px-lg-2 " aria-labelledby="navbarDropdown">
+
+                          <li class="l2 px-1 "><a class="l1 ss" href="#">Blog</a>
+                          </li>
+                          <li class="l2 px-1 "><a class="l1 ss" href="#">Blog Details</a>
+                          </li>
+                          <li class="l2 px-1 "><a class="l1 ss" href="#">Element</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item py-lg-4 px-lg-2 ">
+                        <a class="nav-link active fw-bolder ss hvr-underline-from-center  "
+                          href="#">Contact</a>
+                      </li>
+                    </ul>
+                    <form class="col-5  d-none d-lg-flex">
+                      <input
+                        style="border-radius:50px; width: 250px; background-color: rgb(223, 223, 223); font-size: 13px;"
+                        class="form-control  me-2 ss  "
+                        type="search" placeholder="Search Courses" aria-label="Search" aria-describedby="btn">
+                      <button id="btn" style="background-color: rgb(45,48,146); color: white;"
+                        class="btn  " type="submit"><i
+                          class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  
   <div style="padding: 0;" class="container-fluid ">
     <div class="row" id="header">
-      <div class="row">
+      <div style="padding: 0;" class="row">
         <div class="col-lg-12 d-none d-lg-block border-bottom" id="first-header">
           <div style="height: 50px;" id="row" class="row d-flex   ">
             <div style="background-color: rgb(45,48,146)" class="col-2  ">
@@ -69,26 +148,29 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" style="padding: 0;">
         <div id="menyu" class="container" style="height: 90px; ">
           <div class="row  ">
-            <div id="header_col" style="background-color: rgb(223, 223, 223);" class="col-sm-12 col-md-12 col-lg-2  ">
+            <div id="header_col" style="background-color: rgb(223, 223, 223);padding-left: 20px;" class="col-sm-12 col-md-12 col-lg-2  ">
               <img id="header_img" class=" wow animate__animated animate__wobble animate__delay-3s"
                 style="padding: 30px; padding-left: 20px;"
                 src="data:image/webp;base64,UklGRmQDAABXRUJQVlA4TFgDAAAvn8AHEEfFqG0jQf4vjuOPcWeyOgpiwRTvTiOBQIrTGW21bdsw+f/ZzE6R1LZtw8BrCv0G6pTon3xfEAIAIBZCAOHM9VIIhdSBBwDg4IvCDeQhDHtp+BrXja0Gj18Igr3WMnYOFoGB2wJzseW9KQELUgpA2rZtZyM9T91Uazxj27Zt25712Frbtvd/9kUm2eZzRP8ZuG2kKD3GLBy8Afy5l1A5sf8LxPmxO1YWcw+MIveIiKh09STn8W+pmDExElq2BpOI4q6cAYDTl6KI0oZ3Wo2Cz9e35qn/Ipx/2B1Eue/hTTYF9T6+ABf6aHbj2mfD2BtVMXfv1Idyij2MpaqPJ+5OlUYYxs57VDDSkBdMRGFdj4aIaPRBZygRBec3jxUaACNTHVSydf/1r2erbWFEzcmU3EgU3rH+/OeLe5vF1D4yAoEd4pPTs/tlOYVRSFn5tN2dITAKdBIPtpYWR+tSiSh0YDqUiEJn+kKIKL1+/PLK3s0kXXCi2fP/kMUJ/L49FEF8Iofv/uF8srTFjqgAeBDRAjrFjOhVBbchnxZWV1evUuZfAFCN12lCRJtTb7woioZAHb0HgO9UBMfAjlzM7mPArAQqVhRFOQZMAhMHIlr9TaL4T/LojaAC9EdSGjunYEK0cjXhtiLaPAIURESnCicAjx0RbW6VeB1+WR8Df6ob0aoxDkSTj3NQkJG3I3J9zSNF7gROROSUVOBmlcwmnbEgOngHHyIqwucUrVLkTi6BhVsFXpNASk8YX0Us4WTL7mLbxCfYrDBInBhPB9eYkkOY54k19Fr1xqQSJ6fklSNxciFaeV8VWDhDOP7m6Li4uBjNV5iqMqtA6uREUbxyENGjEUy0PkQvZJsFFioO+Q8upA2SFQAADhUPlBt5XKy+VY/vgs0r+C5oi8/E1aliESDpEG4At4nVsSFafOD1P8n6f1e1Q3wh7ruqWkOi6NX/v0RLBLstchhTJnapogKq0e6/TksYZf+SovK/xGNDNCkCRZfNX0tu0IxADoXX1dW09k2vPTsn4ezTlcnepqrquvCAR5CowTcCXvZFCIQCnVuPX336+PbBwUJtCFE4RyhRaN3i0cP3X7++e3IHjCInbsQRpWVlZaUTxS+dAiPKtyRik/ANDCMA"
                 alt="">
 
             </div>
-            <div class="col" style="padding-right: 0; padding-left: 0;">
+            <div id="menu-1" class="col" style="padding-right: 0; padding-left: 0;">
               <nav style="z-index: 3; background-color: white;" class="navbar navbar-expand-lg navbar-light py-lg-0 ">
                 <div class="container">
                   <a class="navbar-brand wow animate__animated animate__backInUp animate__delay-1s   d-lg-none"
                     href="#">Menyu</a>
-                  <button class="navbar-toggler border-0 wow animate__animated animate__backInLeft animate__delay-2s"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+
+                  <div
+                    class="menu-btn navbar-toggler border-0 wow animate__animated animate__backInLeft animate__delay-2s"
+                    type="button" data-bs-toggle="collapse" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu-btn-burger"></div>
+                  </div>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-start">
                       <li class="nav-item py-lg-4 px-lg-2 ">
@@ -148,7 +230,7 @@
 
 
       <div id="header2" class="row">
-        <div class="container d-flex  justify-content-evenly">
+        <div style="padding: 0;" class="container d-flex  justify-content-evenly">
           <div class="row ">
             <div id="learn" class="col ">
               <p class="wow animate__animated  animate__fadeInTopRight animate__delay-3s content_sml">Popular online
@@ -535,7 +617,7 @@
                   src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/xabout2.png.pagespeed.ic.6xSE4VgknV.webp"
                   alt="">
               </div>
-             
+
             </div>
           </div>
         </div>
@@ -545,7 +627,7 @@
       id="content-5">
       <div id="cont" class="container">
 
-        ,<div class="row"> 
+        ,<div class="row">
           <div class="col-10  col-sm-12 col-md-12 col-lg-12 px-lg-5">
             <div class=" card-1 text-center px-lg -5 px-0 px-sm-0   ">
               <div id="ripp" style="width: 100px;  ; border-radius: 60%; margin-bottom: 30px;"
@@ -704,8 +786,8 @@
     </div>
     <div class="scrolTop">
       <i class="fas fa-angle-up fa-3x" style="color: white;"></i>
-  
-  </div>
+
+    </div>
   </div>
 
 
@@ -727,6 +809,49 @@
   <script src="WOW-master/WOW-master/dist/wow.js"></script>
   <script>
     new WOW().init();
+
+
+
+
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navbar").style.top = "0";
+        $('#navbar').css({ display: 'block' })
+      } else {
+        document.getElementById("navbar").style.top = "-150px";
+      }
+    }
+
+
+
+    const menuBtn = document.querySelector('.menu-btn');
+    let menuOpen = false;
+    menuBtn.addEventListener('click', () => {
+      if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true
+      }
+      else {
+        menuBtn.classList.remove('open');
+        menuOpen = false
+      }
+    })
+
+    const menuBtnn = document.querySelector('.b');
+    let menuOpenn = false;
+    menuBtnn.addEventListener('click', () => {
+      if (!menuOpenn) {
+        menuBtnn.classList.add('open');
+        menuOpenn = true
+      }
+      else {
+        menuBtnn.classList.remove('open');
+        menuOpenn = false
+      }
+    })
   </script>
 
 </body>
