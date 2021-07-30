@@ -48,30 +48,6 @@
        transform: rotate(-45deg);
    }
 
-.menu-btn-1{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    /* margin-left: 40px; */
-    align-items: center;
-    width: 80px;
-    height: 50px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-   }
-  .menu-btn-1.open .menu-btn-burger{
-       transform: rotate(180deg);
-       background: transparent;
-   }
-   .menu-btn-1.open .menu-btn-burger::before{
-       transform: rotate(45deg) ;
-   }
-   .menu-btn-1.open .menu-btn-burger::after{
-       transform: rotate(-45deg);
-   }
-  
-
-
 body{
     overflow-x: hidden;
 }
