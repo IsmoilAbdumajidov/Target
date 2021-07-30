@@ -2,6 +2,7 @@
 
 
 .menu-btn{
+    background-color: transparent !important;
     position: relative;
     display: flex;
     justify-content: center;
