@@ -41,7 +41,7 @@
           <nav style="z-index: 3; background-color: white;" class="navbar navbar-expand-lg navbar-light py-0 ">
             <div class="container">
               <a class="navbar-brand   d-lg-none" href="#">Menyu</a>
-              <div class="menu-btn navbar-toggler border-0 "  data-bs-toggle="collapse"
+              <div class="menu-btn navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSup" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <div class="menu-btn-burger"></div>
@@ -156,7 +156,7 @@
                 <div class="container">
                   <a class="navbar-brand wow animate__animated animate__backInUp animate__delay-1s   d-lg-none"
                     href="#">Menyu</a>
-                  <div class="menu-btn b navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                  <div class="menu-btnn navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <div class="menu-btn-burger b-burger"></div>
@@ -830,7 +830,7 @@
       }
     })
 
-    const menuBtnn = document.querySelector('.b');
+    const menuBtnn = document.querySelector('.menu-btnn');
     let menuOpenn = false;
     menuBtnn.addEventListener('click', () => {
       if (!menuOpenn) {
